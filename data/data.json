@@ -1,6 +1,5 @@
 {
-    "portfolio":
-    [
+    "portfolio": [
         {
             "id": 1,
             "nama": "Hangari Haven (Restful XML Restoran)",
@@ -26,7 +25,7 @@
             "kategori": "Web",
             "client": "Project Akhir Skripsi",
             "date_project": "2023",
-            "url_project": "https://github.com/ZuyinatinK/DSS-Useful-Life-and-Depreciation-Value-of-Infrastructure-Facilities",
+            "url_project": "https://github.com/ZuyinatinK/DSS-Useful-Life-and-Depreciation-Value-of-Infrastructure-Facilities (Private)",
             "keterangan": "Sistem Pendukung Keputusan (SPK) ini dirancang untuk menentukan masa manfaat dan nilai penyusutan sarana prasarana menggunakan metode MULTIMOORA. Website ini memiliki dua role user, yaitu admin dan pengunjung, yang masing-masing memiliki akses ke halaman profile, dashboard, dan pengelolaan data SARPRAS. Admin dapat melakukan manajemen pengguna, kriteria dan sub kriteria, bobot, alternatif, serta seluruh data sarana prasarana kantor. Pengunjung juga memiliki akses untuk melihat dan mengelola data serta melakukan analisis MULTIMOORA hingga proses perangkingan. Dengan fitur yang lengkap dan terstruktur, SIDESTEP membantu dalam pengambilan keputusan yang lebih terstruktur dan akurat dalam manajemen aset."
         },
         {
