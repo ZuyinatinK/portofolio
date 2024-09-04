@@ -76,6 +76,13 @@
             "foto": "assets/img/certificate/certificate-7.png",
             "keterangan": "Sertifikat Pelatihan",
             "kategori": "Pelatihan"
+        },
+        {
+            "id": 12,
+            "nama": "Git and Github",
+            "foto": "assets/img/certificate/certificate-13.png",
+            "keterangan": "Sertifikat Pelatihan",
+            "kategori": "Pelatihan"
         }
     ]
 }
