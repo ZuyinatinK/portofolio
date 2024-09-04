@@ -23,64 +23,64 @@
         },
         {
             "id": 4,
+            "nama": "Git and Github",
+            "foto": "assets/img/certificate/certificate-13.jpg",
+            "keterangan": "Sertifikat Pelatihan",
+            "kategori": "Pelatihan"
+        },
+        {
+            "id": 5,
             "nama": "Backend - Advanced Golang",
             "foto": "assets/img/certificate/certificate-1.png",
             "keterangan": "Sertifikat Pelatihan",
             "kategori": "Pelatihan"
         },
         {
-            "id": 5,
+            "id": 6,
             "nama": "Distributed Systems and Security Laboratory Assistant",
             "foto": "assets/img/certificate/certificate-10.png",
             "keterangan": "Sertifikat Asisten Praktikum",
             "kategori": "Work"
         },
         {
-            "id": 6,
+            "id": 7,
             "nama": "Information Technology Staff",
             "foto": "assets/img/certificate/certificate-11.png",
             "keterangan": "Sertifikat Magang",
             "kategori": "Work"
         },
         {
-            "id": 7,
+            "id": 8,
             "nama": "Backend - Basic Golang",
             "foto": "assets/img/certificate/certificate-2.png",
             "keterangan": "Sertifikat Pelatihan",
             "kategori": "Pelatihan"
         },
         {
-            "id": 8,
+            "id": 9,
             "nama": "Belajar Membangun Website untuk Memulai Karir <br> sebagai Software Developer",
             "foto": "assets/img/certificate/certificate-3.png",
             "keterangan": "Sertifikat Pelatihan Prakerja",
             "kategori": "Prakerja"
         },
         {
-            "id": 9,
+            "id": 10,
             "nama": "Quality Assurance",
             "foto": "assets/img/certificate/certificate-5.png",
             "keterangan": "Sertifikat Pelatihan",
             "kategori": "Pelatihan"
         },
         {
-            "id": 10,
+            "id": 11,
             "nama": "Frontend – CSS",
             "foto": "assets/img/certificate/certificate-6.png",
             "keterangan": "Sertifikat Pelatihan",
             "kategori": "Pelatihan"
         },
         {
-            "id": 11,
+            "id": 12,
             "nama": "Frontend – HTML",
             "foto": "assets/img/certificate/certificate-7.png",
-            "keterangan": "Sertifikat Pelatihan",
-            "kategori": "Pelatihan"
-        },
-        {
-            "id": 12,
-            "nama": "Git and Github",
-            "foto": "assets/img/certificate/certificate-13.jpg",
             "keterangan": "Sertifikat Pelatihan",
             "kategori": "Pelatihan"
         }
