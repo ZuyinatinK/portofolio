@@ -486,6 +486,8 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+  font-size: 15px;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
