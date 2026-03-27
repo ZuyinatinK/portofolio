@@ -1,5 +1,5 @@
 
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -85,7 +85,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('body').classList.toggle('mobile-nav-active')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -94,7 +94,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -154,7 +154,7 @@
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
+      handler: function (direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
@@ -175,9 +175,9 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -185,7 +185,7 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        portfolioIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
       }, true);
@@ -260,11 +260,11 @@
 
 // Certificate
 function tampilkanSemuaCertificate() {
-  $.getJSON('data/certificate.json', function(data) {
+  $.getJSON('data/certificate.json', function (data) {
     let certificate = data.certificate;
     let content = '';
-    $.each(certificate, function(i, data) {
-        content += '<div class="col-lg-6 col-md-6 certificate-item"><div class="certificate-wrap"><img src="' + data.foto + '" class="img-fluid" alt=""><div class="certificate-info"><h4>' + data.keterangan + '</h4><p>' + data.nama + '</p><div class="certificate-links"><a href="' + data.foto + '" data-gallery="certificateGallery" class="certificate-lightbox" title="' + data.nama + '"><i class="bx bx-plus"></i></a></div></div></div></div>';
+    $.each(certificate, function (i, data) {
+      content += '<div class="col-lg-6 col-md-6 certificate-item"><div class="certificate-wrap"><img src="' + data.foto + '" class="img-fluid" alt=""><div class="certificate-info"><h4>' + data.keterangan + '</h4><p>' + data.nama + '</p><div class="certificate-links"><a href="' + data.foto + '" data-gallery="certificateGallery" class="certificate-lightbox" title="' + data.nama + '"><i class="bx bx-plus"></i></a></div></div></div></div>';
     });
     $('#certificate-container').html(content);
     GLightbox({ selector: '.certificate-lightbox' });
@@ -273,7 +273,7 @@ function tampilkanSemuaCertificate() {
 
 tampilkanSemuaCertificate();
 
-$('.data-filter-certificate').on('click', function() {
+$('.data-filter-certificate').on('click', function () {
 
   $('.data-filter-certificate').removeClass('filter-active');
   $(this).addClass('filter-active');
@@ -284,8 +284,8 @@ $('.data-filter-certificate').on('click', function() {
     tampilkanSemuaCertificate();
     return;
   }
-  
-  $.getJSON('data/certificate.json', function(data) {
+
+  $.getJSON('data/certificate.json', function (data) {
     let certificate = data.certificate;
     let content = '';
 
@@ -303,12 +303,12 @@ $('.data-filter-certificate').on('click', function() {
 
 // PORTFOLIO
 function tampilkanSemuaPortfolio() {
-  $.getJSON('data/data.json', function(data) {
+  $.getJSON('data/data.json', function (data) {
     let portfolio = data.portfolio;
     let content = '';
 
-    $.each(portfolio, function(i, data) {
-        content += '<div class="col-lg-4 col-md-6 portfolio-item"><div class="portfolio-wrap"><img src="' + data.foto + '" class="img-fluid" alt="' + data.nama + '"><div class="portfolio-info"><h4>' + data.kategori + '</h4><p>' + data.nama + '</p><div class="portfolio-links"><a href="' + data.foto + '" data-gallery="portfolioGallery" class="portfolio-lightbox" title="' + data.nama + '"><i class="bx bx-plus"></i></a><a href="portfolio-details.html?id=' + data.id + '" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a></div></div></div></div>';
+    $.each(portfolio, function (i, data) {
+      content += '<div class="col-lg-4 col-md-6 portfolio-item"><div class="portfolio-wrap"><img src="' + data.foto + '" class="img-fluid" alt="' + data.nama + '"><div class="portfolio-info"><h4>' + data.kategori + '</h4><p>' + data.nama + '</p><div class="portfolio-links"><a href="' + data.foto + '" data-gallery="portfolioGallery" class="portfolio-lightbox" title="' + data.nama + '"><i class="bx bx-plus"></i></a><a href="portfolio-details.html?id=' + data.id + '" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a></div></div></div></div>';
     });
 
     $('#portfolio-container').html(content);
@@ -321,7 +321,7 @@ function tampilkanSemuaPortfolio() {
 tampilkanSemuaPortfolio();
 
 
-$('.data-filter').on('click', function() {
+$('.data-filter').on('click', function () {
 
   $('.data-filter').removeClass('filter-active');
   $(this).addClass('filter-active');
@@ -332,8 +332,8 @@ $('.data-filter').on('click', function() {
     tampilkanSemuaPortfolio();
     return;
   }
-  
-  $.getJSON('data/data.json', function(data) {
+
+  $.getJSON('data/data.json', function (data) {
     let portfolio = data.portfolio;
     let content = '';
 
@@ -352,7 +352,7 @@ $('.data-filter').on('click', function() {
 
 // DETAIL
 
-(function() {
+(function () {
   "use strict";
 
   // Fungsi untuk menampilkan detail portfolio berdasarkan ID
@@ -363,7 +363,7 @@ $('.data-filter').on('click', function() {
     console.log("ID dari URL:", id); // Debug log
 
     if (id) {
-      $.getJSON('data/data.json', function(data) {
+      $.getJSON('data/data.json', function (data) {
         console.log("Data JSON diterima:", data); // Debug log
 
         let portfolio = data.portfolio;
@@ -414,31 +414,31 @@ $('.data-filter').on('click', function() {
           </div>
           `);
 
-            new Swiper('.portfolio-details-slider', {
-              speed: 500,
-              loop: true,
-              autoplay: {
-                delay: 5000,
-                disableOnInteraction: false
-              },
-              pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true
-              }
-            });
+          new Swiper('.portfolio-details-slider', {
+            speed: 500,
+            loop: true,
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              type: 'bullets',
+              clickable: true
+            }
+          });
 
         } else {
           console.error("ID tidak ditemukan dalam data portfolio");
         }
-      }).fail(function(jqxhr, textStatus, error) {
+      }).fail(function (jqxhr, textStatus, error) {
         const err = textStatus + ", " + error;
         console.error("Gagal mengambil data dari data.json: " + err);
       });
     } else {
       console.error("ID tidak ada dalam URL");
     }
-    
+
   }
 
   // Panggil fungsi ini saat dokumen siap jika pada halaman detail
